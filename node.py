@@ -44,6 +44,10 @@ class Node:
     def backtrack(self):
         """ Back tracks nodes until it arrives on a node where connections can be made """
         if self.get_connection_options():
+            r = random.random()
+            g = random.random()
+            b = random.random()
+            turtle.color((r, g, b))
             self.connect()
 
         elif self.index:

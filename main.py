@@ -7,10 +7,11 @@ import sys
 from maze import Maze
 from solver import Solver
 
+turtle.pensize(3)
 sys.setrecursionlimit(100000)
 
-MAZE_COLOR = '#000000'
-SOLVER_COLOR = '#ff0000'
+MAZE_COLOR = (0, 0, 0)
+SOLVER_COLOR = (1, 0, 0)
 MAZE_SPEED = 10
 SOLVER_SPEED = 2
 
